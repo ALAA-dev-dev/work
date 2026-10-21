@@ -1,0 +1,38 @@
+package com.mycompany.oppp;
+import java.util.Scanner;
+public class Oppp {
+
+    public static void main(String[] args) {
+     Scanner b=new Scanner(System.in);
+        System.out.println("Enter n1:");
+        double n1=b.nextDouble();
+        System.out.println("Choose From The Menu ");
+        System.out.println("____________________________");
+        System.out.println("1-From CM to Inche");
+        System.out.println("2-From Inche to CM");
+        System.out.println("3-From M to Feet");
+        System.out.println("4-From Feet to M");
+        System.out.println("5-From Dunm to Hiktar");
+        System.out.println("6-From Hiktar to Dnum");
+        System.out.println("7-From Cels to Fenh");
+        System.out.println("8-From Fenh to Cels");
+        int ch=b.nextInt();
+        System.out.println("____________________________");
+        double Result=0;
+        switch(ch){
+            case 1:Result=n1/2.54;break;
+            case 2:Result=n1*2.54;break;
+            case 3:Result=n1*3.28084;break;
+            case 4:Result=n1*0.3048;break;
+            case 5:Result=n1/10;break;
+            case 6:Result=n1*10;break;
+            case 7:Result=(n1*1.8)+32;break;
+            case 8:Result=(n1-32)*0.5;break;
+            default: System.out.println("Invalid Choice");break;
+
+        }
+        if(ch>=1 && ch<=8){
+        System.out.println("Result="+Result);
+        }
+    }
+}
