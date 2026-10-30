@@ -1,0 +1,15 @@
+package com.mycompany.homework2;
+
+public class Homework2 {
+
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = -n + 1; i < n; i++) {
+            int spaces = Math.abs(i);
+            int stars = 2 * (n - spaces) - 1;
+
+            System.out.println(" ".repeat(spaces) + "*".repeat(stars));
+        }
+    }
+}
